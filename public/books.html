@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <title>Books</title>
+
+<!--        Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<!-- jQuery CDN-->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<!--    Compiled and minified JavaScript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navigation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="  mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="books.html">My Books</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- from https://hackerthemes.com/bootstrap-cheatsheet/#navbar -->
+  </header>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Year Published</th>
+        <th>Publisher</th>
+        <th>Page Count</th>
+        <th>MSRP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class = "tableRow">
+        <td>The Tipping Point</td>
+        <td>Malcom Gladwell</td>
+        <td>2002</td>
+        <td>Back Bay Books</td>
+        <td>301</td>
+        <td>$30</td>
+      </tr>
+      <tr class = "tableRow">
+        <td>The Tools of Titans</td>
+        <td>Tim Ferris</td>
+        <td>2016</td>
+        <td>Houghton Mifflin Harcourt</td>
+        <td>736</td>
+        <td>$30</td>
+      </tr>
+      <tr class = "tableRow">
+        <td>Billion Dollar Whale</td>
+        <td>Tom Wright & Bradley Hope</td>
+        <td>2018</td>
+        <td>Hackette Books</td>
+        <td>400</td>
+        <td>$29.65</td>
+      </tr>
+      <tr class = "tableRow">
+        <td>Extreme Ownership: How U.S. Navy SEALs Lead and Win</td>
+        <td>Jocko Willink & Leif Babin</td>
+        <td>2017</td>
+        <td>St. Martin's Press</td>
+        <td>384</td>
+        <td>$27.99</td>
+      </tr>
+    </tbody>
+  </table>
+<!-- <div class ="tippingPoint"></div> -->
+<!-- <div class = "image"></div> -->
+<a target="_blank" href="img/tippingPoint.jpg">
+  <img src="img/tippingPoint.jpg" alt="Tipping Point"/>
+</a>
+<p><cite><a href="https://www.amazon.com/Malcolm-Gladwell-Tipping-1905-07-09-Paperback/dp/B014BH6VAA"> Source</a></cite></p>
+
+
+<!-- Used template from w3schools.com -->
+<br>
+<br>
+<h2 class="redHeader"> Add A Book</h2>
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Title</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Author</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Author">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Year Published</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Year Published">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Publisher</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Publisher">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Page Count</label>
+    <input type="number" min = 1 class="form-control" id="formGroupExampleInput2" placeholder="Page Count">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">MSRP</label>
+    <input type="number" min = 0 class="form-control" id="formGroupExampleInput2" placeholder="MSRP">
+  </div>
+  <!-- Used from: https://hackerthemes.com/bootstrap-cheatsheet/#form-group -->
+</form>
+
+<footer class="blackFooter">Ignacio Paredes | Avid Book Reader | Member of the Continental Hotel</footer>
+</body>
+</html>

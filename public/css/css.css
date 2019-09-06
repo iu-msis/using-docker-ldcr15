@@ -1,0 +1,83 @@
+body{
+  font-family: sans-serif;
+  color: black;
+    }
+.redHeader{
+  color:red;
+}
+.navBarColor{
+  color: white;
+  background-color: black;
+  margin: 0px;
+}
+#bodyGreen{
+  color:green;
+}
+nav{
+  background-color: black;
+  margin: 0px;
+  color: white;
+}
+
+a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p{
+  color:black;
+  background-color: lightgrey;
+  margin: 0px;
+  padding: 10px;
+}
+
+
+
+a:hover{
+  font-weight: bolder;
+  color: blue;
+}
+
+.tippingPoint{
+  background-image: url("img/tippingPoint.jpg");
+  width:200px;
+  height: 250px;
+}
+
+.image{
+  background-image: url("img/toolsOfTitans.jpg");
+  width:100px;
+}
+
+.tableRow:hover{
+  font-weight:bolder;
+  background-color: whitesmoke;
+  color: black;
+  }
+
+.blackFooter{
+  color:white;
+  background-color:black;
+}
+
+
+img {
+  border: 1px solid lightgrey; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+  height:200px;
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px blue
+}
+/* Used template from w3schools.com */
+
+
+.hover_img a { position:relative; }
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block; }
+/* used from stackOverflow */
