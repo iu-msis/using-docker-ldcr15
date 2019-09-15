@@ -27,20 +27,26 @@ a{
 }
 
 p{
+  align-self: center;
   color:black;
   background-color: lightgrey;
-  margin: 0px;
+  margin: s0px;
   padding: 0px;
 }
 
 footer{
-  margin: 30px;
+    align-self: center;
+    color: white;
+    background-color: black;
+    margin: 0px;
+    text-align: left;
+    padding: 0px;
 }
 
 
 a:hover{
   font-weight: bolder;
-  color: blue;
+  color: green;
 }
 
 .tippingPoint{

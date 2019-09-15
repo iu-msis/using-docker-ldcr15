@@ -71,7 +71,7 @@
      Source:<a v-bind:href="user.picture.large">https:randomuser.me</a> <br>
     My first name is: {{ user.name.first }}<br>
     My last name is: {{ user.name.last }}<br>
-    I was born on: {{ user.dob.date }}<br>
+    My date and time of birth are: {{ user.dob.date }}<br>
     I'm {{ user.dob.age }} years old! <br>
     I am from {{user.nat}}<br>
     Reach me at: <a class="anchor-style" :href="'mailto:'+ user.email"> {{ user.email }}<a><br>
@@ -81,11 +81,18 @@
 
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <div class = "tippingPoint"></div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js\randomUser.app.js"></script>
 </body>
-<footer class="blackFooter">Ignacio Paredes | "The Lion" | Avid Book Reader | Member of the Continental Hotel</footer>
+
+<footer> Avid Book Reader | Member of the Continental Hotel</footer>
+
 </html>
