@@ -42,7 +42,7 @@
 
 <body>
 
-<h2> Hello!</h2>
+<!-- <h2> Hello!</h2>
 <a target="_blank" href="img/ignacioParedes.jpg">
   <img src="img/ignacioParedes.jpg" alt="Ignacio Paredes"/>
 </a>
@@ -59,10 +59,32 @@
   <p>I was born in 1990, so as of today (9/2/2019) I'm 28!</p>
 
 <h2>Reach Out For More Info!</h2>
-  <p>Send me a message via email: <a href="mailto:ignacio.paredes@thisisnotarealemail.com">Click Here</a></p>
+  <p>Send me a message via email: <a href="mailto:ignacio.paredes@thisisnotarealemail.com">Click Here</a></p> -->
+
+
+<h2> Hello!</h2>
+<div id="randomUserAppInput" class="col-md-4" align = center>
+  <div v-for="user in users" align = center>
+    <br>
+    <p v-for="user in users" align = center>
+    <img v-bind:src="user.picture.large"></img><br>
+    My first name is: {{ user.name.first }}<br>
+    My last name is: {{ user.name.last }}<br>
+    I was born on: {{ user.dob.date }}<br>
+    I'm {{ user.dob.age }} years old! <br>
+    I am from {{user.nat}}<br>
+    Reach me at: <a class="anchor-style" :href="'mailto:'+ user.email"> {{ user.email }}<a><br>
+    </p>
+  </div>
+  </div>
+
+<br>
+<br>
+
+
 <div class = "tippingPoint"></div>
-
-
-<footer class="blackFooter">Ignacio Paredes | "The Lion" | Avid Book Reader | Member of the Continental Hotel</footer>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js\randomUser.app.js"></script>
 </body>
+<footer class="blackFooter">Ignacio Paredes | "The Lion" | Avid Book Reader | Member of the Continental Hotel</footer>
 </html>
