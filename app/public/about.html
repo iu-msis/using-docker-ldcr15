@@ -67,7 +67,8 @@
   <div v-for="user in users" align = center>
     <br>
     <p v-for="user in users" align = center>
-    <img v-bind:src="user.picture.large"></img><br>
+    <a v-bind:href="user.picture.large"><img v-bind:src="user.picture.large"></img></a><br>
+     Source:<a v-bind:href="user.picture.large">https:randomuser.me</a> <br>
     My first name is: {{ user.name.first }}<br>
     My last name is: {{ user.name.last }}<br>
     I was born on: {{ user.dob.date }}<br>
