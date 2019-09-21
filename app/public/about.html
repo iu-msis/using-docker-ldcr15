@@ -76,7 +76,7 @@
     I am from {{user.nat}}<br>
     Reach me at: <a class="anchor-style" :href="'mailto:'+ user.email"> {{ user.email }}<a><br>
     </p>
-    <form v-on: submit.prevent = "fetchPatients">
+    <form v-on:submit.prevent = "fetchUser">
     <button>Refresh</button>
     </form>
   </div>
